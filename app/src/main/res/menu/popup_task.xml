@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/selesaikan_tugas"
+        android:title="@string/selesaikan_tugas"/>
+    <item android:id="@+id/edit_tugas"
+        android:title="@string/edit_tugas"
+        />
+    <item android:id="@+id/hapus_tugas"
+        android:title="@string/hapus_tugas"/>
+
+</menu>

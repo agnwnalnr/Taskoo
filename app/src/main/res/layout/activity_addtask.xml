@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddTaskActivity">
+
+    <FrameLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/ungu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white"
+            android:layout_gravity="start|center"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/mulish_bold"
+                android:maxLines="1"
+                android:text="Judul Task"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/judul_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/field"
+                android:fontFamily="@font/mulish_medium"
+                android:gravity="center|start"
+                android:hint="Masukkan judul task"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                android:textColor="@color/abuabu"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/mulish_bold"
+                android:maxLines="1"
+                android:text="Deskripsi"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/deskripsi_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/field"
+                android:fontFamily="@font/mulish_medium"
+                android:gravity="top|start"
+                android:hint="Masukkan deskripsi task"
+                android:minHeight="150dp"
+                android:padding="15dp"
+                android:textColor="@color/abuabu"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/mulish_bold"
+                android:maxLines="1"
+                android:text="Kategori"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <RadioGroup
+                android:id="@+id/row1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:fontFamily="@font/mulish_medium"
+                    android:gravity="center"
+                    android:text="Penting Mendesak"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_marginStart="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:fontFamily="@font/mulish_medium"
+                    android:gravity="center"
+                    android:text="Penting Tidak Mendesak"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:textSize="12sp" />
+            </RadioGroup>
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/row2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:fontFamily="@font/mulish_medium"
+                    android:gravity="center"
+                    android:text="Tidak Penting Mendesak"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:fontFamily="@font/mulish_medium"
+                    android:gravity="center"
+                    android:text="Tidak Penting Tidak Mendesak"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:layout_marginStart="5dp"
+                    android:textSize="12sp" />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                android:weightSum="2"
+                >
+
+                <Button
+                    android:id="@+id/batal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_3"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/ungu"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_weight="1"
+                    android:text="Buat"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_2"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:layout_gravity="center|top"
+        android:text="Tambah Task Baru"
+        android:fontFamily="@font/mulish_bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Taskoo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    onboarding-->
+    <string name="onboard_judul1">Mengatur Kegiatan  Sekarang Menjadi Mudah</string>
+    <string name="onboard_judul2">Buat Plan dan Tujuan Kamu Kedepannya</string>
+    <string name="onboard_judul3">Atur Berdasarkan Tingkat Prioritas Rencana</string>
+    <string name="onboard_desk1">Merasa kesulitan dalam mengatur kegiatan? atur semua tugas, jadwal dan rencana kegiatan berdasarkan prioritas utama kamu</string>
+    <string name="onboard_desk2">Kamu dapat menambahkan berbagai rencana, kegiatan, tugas atau projek kamu. Jangan khawatir, kamu dapat menambahkan sebanyak-banyaknya</string>
+    <string name="onboard_desk3">Atur jenis kategori yaitu penting mendesak, tidak penting mendesak, penting tidak mendesak dan tidak penting tidak mendesak</string>
+
+    <string name="historyDelete">Hapus History</string>
+
+    <!--    Popup menu (more option)-->
+    <string name="selesaikan_tugas">Selesaikan Task</string>
+    <string name="edit_tugas">Edit Task</string>
+    <string name="hapus_tugas">Hapus Task</string>
+
+    <!--    Kategori Array-->
+    <string-array name="kategoriArray">
+        <item>Penting Mendesak</item>
+        <item>Tidak Penting Mendesak</item>
+        <item>Penting Tidak Mendesak</item>
+        <item>Tidak Penting Tidak Mendesak</item>
+    </string-array>
+</resources>
